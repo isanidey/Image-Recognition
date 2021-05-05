@@ -19,7 +19,7 @@ function take_snapshot()
 
   console.log('ml5 version:', ml5.version);
   
-classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/j6wCV-6d1/',modelLoaded);
+classifier = ml5.imageClassifier('https://storage.googleapis.com/tm-model/j6wCV-6d1/model.json',modelLoaded);
 
   function modelLoaded() {
     console.log('Model Loaded!');
